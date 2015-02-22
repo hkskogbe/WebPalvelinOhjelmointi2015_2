@@ -1,0 +1,52 @@
+<h1>Rating Statistics</h1>
+<div class="row">
+  <div class="col-sm-4">
+	<h2>Best breweries</h2>
+	<%= render 'best_list', best: @best_breweries %>
+  </div>
+  <div class="col-sm-4">
+	<h2>Best beers</h2>
+	<%= render 'best_list', best: @best_beers %>
+  </div>
+  <div class="col-sm-4">
+	<h2>Best styles</h2>
+	<%= render 'best_list', best: @best_styles %>
+  </div>
+</div>
+
+<h2>Best users</h2>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>favorite beer</th>
+	<th>preferred style</th>
+	<th>favorite brewery</th>
+	<th>ratings given</th>  
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @most_active.each do |b| %>
+      <tr>
+        <td><%= link_to b.username, b %></td>
+        <td><%= b.favorite_beer %></td>
+        <td><%= b.favorite_style %></td>
+        <td><%= b.favorite_brewery.name %></td>
+        <td><%= b.ratings.count %></td>
+        <td></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+<h2>Recent ratings</h2>
+<ul>
+  <% @recent.first(5).each do |rating| %>
+    <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
+  <% end %>
+</ul>
+<p>Total of <%= @ratings.count %> ratings given</p>
+<%= link_to 'New Rating', (new_rating_path if current_user), class:'btn btn-primary'  %>

@@ -1,0 +1,19 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>average rating</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% best.each do |b| %>
+      <tr>
+        <td><%= link_to brewery.name, brewery %></td>
+        <td><%= b.average_rating %></td>
+        <td></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
