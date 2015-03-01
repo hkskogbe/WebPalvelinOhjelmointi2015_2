@@ -1,0 +1,31 @@
+o: ActiveSupport::Cache::Entry:@valueI"g
+<h2>Malmgard
+</h2>
+
+<p>
+  <em>Established year:</em>
+  2001
+</p>
+
+<p>Number of beers 15 </p>
+
+<ul>
+   <li><a href="/beers/5">Huvila Pale Ale</a></li>
+   <li><a href="/beers/6">X Porter</a></li>
+   <li><a href="/beers/10">beer 5 -- 1</a></li>
+   <li><a href="/beers/11">beer 5 -- 2</a></li>
+   <li><a href="/beers/12">beer 5 -- 3</a></li>
+   <li><a href="/beers/13">beer 5 -- 4</a></li>
+   <li><a href="/beers/14">beer 5 -- 5</a></li>
+   <li><a href="/beers/15">beer 5 -- 6</a></li>
+   <li><a href="/beers/16">beer 5 -- 7</a></li>
+   <li><a href="/beers/17">beer 5 -- 8</a></li>
+   <li><a href="/beers/18">beer 5 -- 9</a></li>
+   <li><a href="/beers/19">beer 5 -- 10</a></li>
+   <li><a href="/beers/20">beer 5 -- 11</a></li>
+   <li><a href="/beers/21">beer 5 -- 12</a></li>
+   <li><a href="/beers/22">beer 5 -- 13</a></li>
+</ul>
+
+    <p>Has 42 ratings, average 26.0 </p>
+:ET:@created_atf1425227518.830636:@expires_in0

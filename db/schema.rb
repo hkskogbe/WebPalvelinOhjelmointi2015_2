@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222132924) do
+ActiveRecord::Schema.define(version: 20150301192723) do
 
   create_table "beer_clubs", force: :cascade do |t|
     t.string   "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150222132924) do
     t.integer  "beer_club_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "confirmed"
   end
 
   create_table "ratings", force: :cascade do |t|
@@ -67,5 +68,7 @@ ActiveRecord::Schema.define(version: 20150222132924) do
     t.boolean  "admin"
     t.boolean  "account_frozen"
   end
+
+  add_index "users", ["username"], name: "index_users_on_username"
 
 end

@@ -4,14 +4,14 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.includes(:rating, :beers).all
   end
 
   def freeze_account
 	user = User.find(params[:id])
 	user.update_attribute :account_frozen, (not user.account_frozen)
 
-	new_status = user.account_frozen? ? "account_active" : "account_frozen"
+	new_status = user.account_frozen? ? "account_frozen" : "account_active"
 
 	redirect_to :back, notice:"Account status changed to #{new_status}"
   end

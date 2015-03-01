@@ -29,6 +29,12 @@ gem 'bcrypt', '~> 3.1.7'
 
 ruby '2.2.0'
 
+gem 'jquery-turbolinks'
+
+gem 'rack-mini-profiler'
+
+gem 'omniauth-github'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -68,6 +74,8 @@ group :test do
   gem 'rspec-its'
   gem 'simplecov', require: false
   gem 'webmock'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
 end
 
 gem 'bootstrap-sass'

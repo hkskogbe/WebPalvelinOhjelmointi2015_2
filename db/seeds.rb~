@@ -11,5 +11,5 @@ b1.beers.create name:"Karhu", style_id: 1
 b1.beers.create name:"Tuplahumala", style_id: 1
 b2.beers.create name:"Huvila Pale Ale", style_id: 2
 b2.beers.create name:"X Porter", style_id: 2
-b3.beers.create name:"Hefezeizen", style_id: 2
+b3.beers.create name:"Hefezeizen", style_id: 3
 b3.beers.create name:"Helles", style_id: 1

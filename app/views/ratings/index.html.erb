@@ -1,20 +1,28 @@
 <h1>Rating Statistics</h1>
 <div class="row">
   <div class="col-sm-4">
-	<h2>Best breweries</h2>
+	<h2>Best breweries</h2>	
+	<% cache 'brewery top 3', expires_in:10.minutes do %>
 	<%= render 'best_list', best: @best_breweries %>
+	<% end %>
   </div>
   <div class="col-sm-4">
 	<h2>Best beers</h2>
+	<% cache 'beer top 3', expires_in:10.minutes do %>
 	<%= render 'best_list', best: @best_beers %>
+	<% end %>
   </div>
   <div class="col-sm-4">
 	<h2>Best styles</h2>
+	<% cache 'style top 3', expires_in:10.minutes do %>
 	<%= render 'best_list', best: @best_styles %>
+	<% end %>
   </div>
 </div>
 
 <h2>Best users</h2>
+
+<% cache 'user top 3', expires_in:10.minutes do %>
 
 <table class="table table-hover">
   <thead>
@@ -41,12 +49,20 @@
   </tbody>
 </table>
 
+<% end %>
 
 <h2>Recent ratings</h2>
+
+<% cache 'recent ratings', expires_in:10.minutes do %>
 <ul>
   <% @recent.first(5).each do |rating| %>
     <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
   <% end %>
 </ul>
-<p>Total of <%= @ratings.count %> ratings given</p>
+<% end %>
+
+<% cache 'ratings', expires_in:10.minutes do %>
+  <p>Total of <%= @ratings.count %> ratings given</p>
+<% end %>
+
 <%= link_to 'New Rating', (new_rating_path if current_user), class:'btn btn-primary'  %>

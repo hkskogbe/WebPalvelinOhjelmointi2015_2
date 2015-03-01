@@ -1,0 +1,14 @@
+o: ActiveSupport::Cache::Entry:@valueI"Ä
+    <h2>
+      beer 7 -- 2
+    </h2>
+
+    <p>
+      <a href="/styles/6">bulk</a>
+      brewed by
+      <a href="/breweries/7">Brewery_1</a>
+    </p>
+
+        <p>Has 4 ratings, average 29.5 </p>
+
+:ET:@created_atf1425227208.4096026:@expires_in0

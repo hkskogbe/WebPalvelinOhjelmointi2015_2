@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :beer_clubs
 
   resources :users do
-	post 'toggle_activity', on: :member
+	post 'freeze_account', on: :member
   end
 
   get 'signup', to: 'users#new'
@@ -16,6 +16,13 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :delete]
 
   resources :beers
+
+  get 'auth/:provider/callback', to: 'sessions#create_oauth'
+
+  get 'beerlist', to:'beers#list'
+  get 'ngbeerlist', to:'beers#nglist'
+
+  get 'brewerylist', to:'breweries#list'
 
   resources :breweries do
     post 'toggle_activity', on: :member

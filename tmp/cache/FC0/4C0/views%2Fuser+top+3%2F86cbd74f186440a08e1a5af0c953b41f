@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry:@valueI"9
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>favorite beer</th>
+	<th>preferred style</th>
+	<th>favorite brewery</th>
+	<th>ratings given</th>  
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><a href="/users/56">user_54</a></td>
+        <td>beer 14 -- 17 Brewery_8</td>
+        <td>bulk</td>
+        <td>Brewery_8</td>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/users/163">user_161</a></td>
+        <td>beer 8 -- 29 Brewery_2</td>
+        <td>bulk</td>
+        <td>Brewery_2</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/users/153">user_151</a></td>
+        <td>beer 58 -- 20 Brewery_52</td>
+        <td>bulk</td>
+        <td>Brewery_52</td>
+        <td>2</td>
+        <td></td>
+      </tr>
+  </tbody>
+</table>
+
+:ET:@created_atf1425240162.1737137:@expires_inf6e2

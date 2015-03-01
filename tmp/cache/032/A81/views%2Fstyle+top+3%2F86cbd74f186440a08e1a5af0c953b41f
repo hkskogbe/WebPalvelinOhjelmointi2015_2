@@ -1,0 +1,29 @@
+o: ActiveSupport::Cache::Entry:@valueI"	<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>average rating</th>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><a href="/styles/1">Lager</a></td>
+        <td>28.142857142857142</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/styles/2">Pale Ale</a></td>
+        <td>25.692307692307693</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/styles/6">bulk</a></td>
+        <td>25.518433931484502</td>
+        <td></td>
+      </tr>
+  </tbody>
+</table>
+
+
+:ET:@created_atf1425240162.1272514:@expires_inf6e2

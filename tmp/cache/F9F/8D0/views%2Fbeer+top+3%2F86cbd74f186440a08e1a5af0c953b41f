@@ -1,0 +1,29 @@
+o: ActiveSupport::Cache::Entry:@valueI"ó	<table class="table table-hover">
+  <thead>
+  <tr>
+    <th></th>
+    <th>average rating</th>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><a href="/beers/31">beer 7 -- 3</a></td>
+        <td>50.0</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/beers/147">beer 13 -- 30</a></td>
+        <td>50.0</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="/beers/942">beer 59 -- 1</a></td>
+        <td>50.0</td>
+        <td></td>
+      </tr>
+  </tbody>
+</table>
+
+
+:ET:@created_atf1425240162.088951:@expires_inf6e2

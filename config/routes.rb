@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   resources :styles
 
-  resources :memberships
-
+  resources :memberships do
+	post 'confirm_member', on: :member
+  end
+  
   resources :beer_clubs
 
   resources :users do
@@ -16,6 +18,13 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :delete]
 
   resources :beers
+
+  get 'auth/:provider/callback', to: 'sessions#create_oauth'
+
+  get 'beerlist', to:'beers#list'
+  get 'ngbeerlist', to:'beers#nglist'
+
+  get 'brewerylist', to:'breweries#list'
 
   resources :breweries do
     post 'toggle_activity', on: :member

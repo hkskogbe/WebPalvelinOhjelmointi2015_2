@@ -65,7 +65,7 @@ class User < ActiveRecord::Base
   end
 
   def self.most_active(n)
-	User.all.sort_by{ |b|- b.average_rating }.uniq{|b| b.name}.first(n)
+	User.all.sort_by{ |b|- b.average_rating }.uniq{|b| b.username}.first(n)
   end
 
 end
